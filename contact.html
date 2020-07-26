@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <p style="font-size: 20px; font-weight: bold;">Ich freue mich auf eure Nachricht!</p>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="header-title"><a href="index.html">Juliane Wendt</a></h1>
+         <div id="header-nav"> <a href="contact.html">Kontakt</a></div>
+     </div>
+    <p style="font-size: 20px; font-weight: bold;">Ich freue mich auf eure Nachricht!</p>
+    <div class="container-fluid">
         <form id="contact-form" name="contact" method="POST" data-netlify="true">
-            <label>Vorname: <input type="text" placeholder="Vorname" name="firstName"></label>
-            <label>Nachname: <input type="text" placeholder="Nachname" name="surname"></label>
-            <br>
-            <label>E-Mail-Adresse: <input type="text" placeholder="E-Mail-Adresse" name="email"></label>
-            <label>Telefonnummer: <input type="text" placeholder="Telefonnummer" name="phone"></label>
-            <br>
-            <label>Deine Nachricht an mich: <textarea id="message" placeholder="Wie kann ich euch helfen?" name="message"></textarea></label>
-            <br>
+            <div class="row">
+                <div class="col-2">
+                    <label>Vorname: <br/><input type="text" placeholder="Vorname" name="firstName"></label>
+                </div>
+                <div class="col-2">
+                    <label>Nachname: <br/><input type="text" placeholder="Nachname" name="surname"></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <label>E-Mail-Adresse: <br/><input type="text" placeholder="E-Mail-Adresse" name="email"></label>
+                </div>
+                <div class="col-2">
+                    <label>Telefonnummer: <br/><input type="text" placeholder="Telefonnummer" name="phone"></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <label>Deine Nachricht an mich: <br/><textarea id="message" placeholder="Wie kann ich euch helfen?"
+                            name="message"></textarea></label>
+                </div>
+            </div>
             <button>Einsenden</button>
         </form>
-        <div id="footer">
-            <div class="left">
-                <h2>Meldet euch bei mir!</h2>
-                <div>Telefonnummer: 0178/9395641</div>
-                <div class="email">Email: kontakt@jwendt.de</div>
-            </div>
-            <div class="middle">
-                <a href="https://www.instagram.com/airingoutmyheart/" target="_blank"><img src="insta.png"
-                        alt="Instagram"></a>
-            </div>
-            <div class="right"></div>
+    </div>
+    <div id="footer">
+        <div class="left">
+            <h2>Meldet euch bei mir!</h2>
+            <div>Telefonnummer: 0178/9395641</div>
+            <div class="email">Email: kontakt@jwendt.de</div>
         </div>
-    </body>
+        <div class="middle">
+            <a href="https://www.instagram.com/airingoutmyheart/" target="_blank"><img src="insta.png"
+                    alt="Instagram"></a>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+
 </html>
