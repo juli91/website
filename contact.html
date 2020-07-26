@@ -6,13 +6,13 @@
     <body>
         <p style="font-size: 20px; font-weight: bold;">Ich freue mich auf eure Nachricht!</p>
         <form id="contact-form" name="contact" method="POST" data-netlify="true">
-            <input type="text" placeholder="Vorname" name="firstName">
-            <input type="text" placeholder="Nachname" name="surname">
+            <label>Vorname: <input type="text" placeholder="Vorname" name="firstName"></label>
+            <label>Nachname: <input type="text" placeholder="Nachname" name="surname"></label>
             <br>
-            <input type="text" placeholder="E-Mail-Adresse" name="email">
-            <input type="text" placeholder="Telefonnummer" name="phone">
+            <label>E-Mail-Adresse: <input type="text" placeholder="E-Mail-Adresse" name="email"></label>
+            <label>Telefonnummer: <input type="text" placeholder="Telefonnummer" name="phone"></label>
             <br>
-            <textarea id="message" placeholder="Wie kann ich euch helfen?" name="message"></textarea>
+            <label>Deine Nachricht an mich: <textarea id="message" placeholder="Wie kann ich euch helfen?" name="message"></textarea></label>
             <br>
             <button>Einsenden</button>
         </form>
