@@ -8,7 +8,7 @@ const fieldnames = [
 
 document.querySelector('#contact-form').addEventListener('submit', async function (e) {
     e.preventDefault();
-    let data = '';
+    let data = 'form-name=contact';
     // alert("Danke für deine Nachricht! Ich melde mich in der Regel innerhalb von 24 Stunden.");
     const action = document.getElementById('contact-form').getAttribute('action');
     console.log(action)
