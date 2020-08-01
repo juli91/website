@@ -21,7 +21,7 @@ document.querySelector('#contact-form').addEventListener('submit', async functio
         console.log(fieldname, field.value);
 
     })
-    const response = await fetch (action, {method: 'POST', body: data});
+    const response = await fetch (action, {method: 'POST', body: data, headers: {'Content-Type': 'application(x-www-form-urlencoded'}});
     console.log(response)
 })
 
