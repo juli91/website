@@ -25,6 +25,9 @@ document.querySelector('#contact-form').addEventListener('submit', async functio
 
     const form = new FormData(document.getElementById('contact-form'));
     fetch('/', { method: 'POST', body: form});
+    const response = await fetch('/', { method: 'POST', body: form});
+    console.log(response);
+
 })
 
 // $("#my-form").submit(function(e) {
