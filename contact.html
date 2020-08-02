@@ -2,7 +2,7 @@
 <html>
 
 <head>
-   <title>Kontakt | Juliane Wendt</title>
+    <title>Kontakt | Juliane Wendt</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -13,47 +13,70 @@
 <body class="d-flex flex-column">
     <div id="header">
         <h1 id="header-title"><a href="index.html">Juliane Wendt</a></h1>
-         <div id="header-nav"> <a href="contact.html">Kontakt</a></div>
-     </div>
-     <div id="content">
-    <p>Ihr habt eine Frage an mich, möchtet mich näher kennenlernen oder über eine mögliche Zusammenarbeit sprechen?</p>
-    <p style="font-size: 20px; font-weight: bold;">Dann schickt mir gern eine Nachricht, ich freue mich auf euch!</p>
-    <div class="container-fluid">
-        <form id="contact-form" name="contact" method="POST" data-netlify="true" action="/">
-            <div class="form-group">
-                    <label>Vorname: <br/><input id="firstName" type="text" placeholder="Vorname" name="firstName"></label>
-                    <label>Nachname: <br/><input  id="surname" type="text" placeholder="Nachname" name="surname"></label>
-            </div>
-            <div class="form-group">
-                    <label>E-Mail-Adresse: <br/><input id="email" type="text" placeholder="E-Mail-Adresse" name="email"></label>
-                    <label>Telefonnummer: <br/><input id="phone" type="text" placeholder="Telefonnummer" name="phone"></label>
-            </div>
-            <div class="form-group">
-                    <label>Deine Nachricht an mich: <br/><textarea id="message" placeholder="Wie kann ich euch helfen?"
-                            name="message"></textarea></label>
-            </div>
-            <button>Abschicken</button>
-        </form>
+        <div id="header-nav"> <a href="contact.html">Kontakt</a></div>
     </div>
-</div>
-<div id="footer">
-    <div class="left">
-        <h2>Meldet euch bei mir!</h2>
-        <div class="phone">Telefonnummer: tba</div>
-        <div class="email">Email: kontakt@jwendt.de</div>
-        <div class="impressum"><a href="impressum.html">Impressum</a></div>
+    <div id="content">
+        <p>Ihr habt eine Frage an mich, möchtet mich näher kennenlernen oder über eine mögliche Zusammenarbeit sprechen?
+        </p>
+        <p style="font-size: 20px; font-weight: bold;">Dann schickt mir gern eine Nachricht, ich freue mich auf euch!
+        </p>
+        <div class="container-fluid">
+            <form id="contact-form" name="contact" method="POST" data-netlify="true" action="/">
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="firstName">Vorname: </label> 
+                        <input class="form-control" id="firstName" type="text" placeholder="Vorname"
+                                name="firstName"> 
+                                <span id="firstNameHelp" class="form-text text-muted">Bitte das Feld ausfüllen</span>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="surname">Nachname:</label>
+                        <input class="form-control" id="surname" type="text" placeholder="Nachname"
+                                name="surname">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <label for="email">E-Mail-Adresse:</label> 
+                            <input class="form-control" id="email" type="text" placeholder="E-Mail-Adresse"
+                                name="email">
+                                <span id="emailHelp" class="form-text text-muted">Bitte das Feld ausfüllen</span>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="phone">Telefonnummer:</label>
+                            <input class="form-control" id="phone" type="text" placeholder="Telefonnummer"
+                                name="phone">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="message">Deine Nachricht an mich:</label> 
+                        <textarea class="form-control" id="message" placeholder="Wie kann ich euch helfen?" name="message"></textarea>
+                        <span id="messageHelp" class="form-text text-muted">Bitte das Feld ausfüllen</span>
+                    </div>
+                </div>
+                <button>Abschicken</button>
+            </form>
+        </div>
     </div>
-    <div class="middle">
-        <a href="https://www.instagram.com/airingoutmyheart/" target="_blank"><img src="insta.png"
-                alt="Instagram"></a>
-        <a href="https://de.linkedin.com/in/juliane-wendt-76264015b" target="_blank" style="padding-left: 5px;"><img src="linkedin.png"
-                    alt="LinkedIn"></a>
-    </div>
-    <div class="right">
-    </div>
+    <div id="footer">
+        <div class="left">
+            <h2>Meldet euch bei mir!</h2>
+            <div class="phone">Telefonnummer: tba</div>
+            <div class="email">Email: kontakt@jwendt.de</div>
+            <div class="impressum"><a href="impressum.html">Impressum</a></div>
+        </div>
+        <div class="middle">
+            <a href="https://www.instagram.com/airingoutmyheart/" target="_blank"><img src="insta.png"
+                    alt="Instagram"></a>
+            <a href="https://de.linkedin.com/in/juliane-wendt-76264015b" target="_blank" style="padding-left: 5px;"><img
+                    src="linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <div class="right">
+        </div>
 
-</div>
-<script src="website.js"></script>
+    </div>
+    <script src="website.js"></script>
 </body>
 
 </html>

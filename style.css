@@ -101,3 +101,7 @@ button {
     padding: 8px;
     border-radius: 12px;
 }
+
+.text-muted {
+    display: none;
+}

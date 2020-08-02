@@ -8,33 +8,26 @@ const fieldnames = [
 
 document.querySelector('#contact-form').addEventListener('submit', async function (e) {
     e.preventDefault();
-    // let data = 'form-name=contact&';
-    // const action = document.getElementById('contact-form').getAttribute('action');
-    // console.log(action)
-    // fieldnames.forEach(function (fieldname, index) {
-    //     const field = document.getElementById(fieldname)
-    //     data += fieldname + '=' + field.value;
-    //     if (index < fieldnames.length -1) {
-    //         data += '&';
-    //     }
-    //     console.log(fieldname, field.value);
+    let sendForm = true;
+    fieldnames.forEach(function (fieldname, index) {
+        const field = document.getElementById(fieldname)
+        // data += fieldname + '=' + field.value;
+        if (['firstName', 'email', 'message'].includes(fieldname)) {
+            if (field.value === '') {
+                const help = document.getElementById(fieldname + 'Help');
+                help.classList.remove('text-muted')
+                sendForm = false
+            } else {
+                const help = document.getElementById(fieldname + 'Help');
+                help.classList.add('text-muted')
+            }
+        }
 
-    // })
-    // const response = await fetch (action, {method: 'POST', body: data, headers: {'Content-Type': 'application(x-www-form-urlencoded'}});
-    // console.log(response)
-
-    const form = new FormData(document.getElementById('contact-form'));
-    fetch('/', { method: 'POST', body: form});
-    const response = await fetch('/', { method: 'POST', body: form});
-    console.log(response);
-
+    })
+    if (sendForm) {
+        const form = document.getElementById('contact-form');
+        const body = new FormData(form);
+        const response = await fetch('/', { method: 'POST', body: body });
+        form.innerHTML = 'Danke für deine Nachricht! Ich melde mich üblicherweise innerhalb von 24 Stunden.'
+    }
 })
-
-// $("#my-form").submit(function(e) {
-//     e.preventDefault();
-
-//     var $form = $(this);
-//     $.post($form.attr("action"), $form.serialize()).then(function() {
-//       alert("Thank you!");
-//     });
-//   });
