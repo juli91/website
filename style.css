@@ -10,8 +10,8 @@ body {
     background-color: #ffffff;
     height: 120px;
     margin: 0;
-    padding: 0 0 0 70px;
-    box-shadow: 10px 0px 10px grey;
+    padding: 0 0 0 25px;
+    box-shadow: 0 0 10px grey;
     position: sticky;
     top: 0px;
     z-index: 10;
@@ -41,49 +41,47 @@ body {
 #footer {
     background-color: #000;
     color: #ffffff;
-    padding: 20px 0 20px 70px;
+    padding: 20px 10px 20px 50px;
     width: 100%;
     flex-shrink: none;
 }
 
+/* Footer for desktop */
+@media only screen and (min-width: 768px) {
+    .container {
+        margin-left: 0;
+    }
+    .col {
+        padding-left: auto;
+    }
+}
+
 #content {
-    padding-left: 100px;
+    padding: 0 30px 0 50px;    
     clear: both;
     margin: 50px 0 50px 0;
     flex: 1 0 auto;
+    line-height: 1.5;
 }
 
 #mypart, #myservices, #zusammenarbeit {
     margin: 10px 0 75px 0;
 }
-#myservices {
-    margin: 75px 0 75px 0;
-}
 
+h2 {
+    padding-bottom: 15px;
+}
 img {
     height: 20px;
     width: 20px;
 }
 
-.left, .middle, .right {
-    display: inline-block;
-    width: 33%;
-}
-
-.phone {
-    margin-top: 25px;
-}
-
-.impressum {
+.phone, .impressum, .email {
     margin-top: 10px;
 }
 
 .impressum a {
     color: #aaa;
-}
-
-.email {
-    margin-top: 10px;
 }
 
 #contact-form {
@@ -104,4 +102,8 @@ button {
 
 .text-muted {
     display: none;
+}
+
+.container, .container-fluid {
+    padding-left: 0;
 }
