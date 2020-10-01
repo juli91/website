@@ -38,6 +38,10 @@ header a {
     text-decoration: none;
 }
 
+header a:hover {
+    color: #000;
+}
+
 footer {
     background-color: #000;
     color: #ffffff;
