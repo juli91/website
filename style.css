@@ -33,13 +33,9 @@ nav {
     float: right;
 }
 
-header a {
+header a, header a:hover {
     color: #000;
     text-decoration: none;
-}
-
-header a:hover {
-    color: #000;
 }
 
 footer {
