@@ -2,21 +2,18 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin: 0;
     min-height: 100vh;
 }
 
 header {    
     background-color: #ffffff;
     height: 120px;
-    margin: 0;
-    padding: 0 0 0 25px;
     box-shadow: 0 0 10px grey;
     position: sticky;
     top: 0px;
     z-index: 10;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 h1 {
@@ -26,8 +23,7 @@ h1 {
 }
 
 nav {
-    padding-left: 0px;
-    margin: 45px 50px 0 0;
+    margin-top: 45px;
     font-weight: bold;
     font-size: 20px;
     ;
@@ -41,26 +37,31 @@ header a, header a:hover {
 footer {
     background-color: #000;
     color: #ffffff;
-    padding: 20px 10px 20px 50px;
+    padding: 20px 50px 20px 50px;
     width: 100%;
-    flex-shrink: none;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    z-index: 10;
 }
 
 /* Footer for desktop */
 @media only screen and (min-width: 768px) {
-    .container {
-        margin-left: 0;
-    }
-    .col {
-        padding-left: auto;
+    .footer-container {
+        max-width: 1000px;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
 #wrapper {
-    padding: 0 30px 0 50px;    
-    margin: 50px 0 50px 0;
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 30px 50px 50px;
     flex: 1 0 auto;
-    line-height: 1.5;
+    line-height: 1.75;
 }
 
 section {
@@ -75,13 +76,10 @@ img {
     width: 20px;
 }
 
-.phone, .impressum, .email {
-    margin-top: 10px;
-}
-
 .impressum a {
     color: #aaa;
 }
+
 
 #contact-form {
     margin: 40px 0 50px 0;
